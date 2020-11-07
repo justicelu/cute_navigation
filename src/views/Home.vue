@@ -173,7 +173,7 @@ export default {
   },
   methods: {
     show_nav_card_method() {
-      if (this.screenWidth < 620 || this.screenHeight < 520) {
+      if (this.screenWidth < 620 || this.screenHeight < 650) {
         this.show_nav_card = false;
       } else this.show_nav_card = true;
     },
@@ -367,7 +367,7 @@ export default {
 .nav_card {
   min-width: 300px;
   min-height: 170px;
-  margin: 16% 25%;
+  margin: 14% 25%;
   z-index: 2;
   background-color: rgba(255, 255, 255, 0.6);
   border: none;
