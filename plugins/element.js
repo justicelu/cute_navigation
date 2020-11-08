@@ -23,6 +23,7 @@ import {
     Message,
     Row,
     Col,
+    Avatar,
 
 } from 'element-ui'
 
@@ -36,5 +37,6 @@ Vue.use(Table)
 Vue.use(TableColumn)
 Vue.use(Row)
 Vue.use(Col)
+Vue.use(Avatar)
     // 挂载到 Vue原型对象上   通过 this.$message 的方法来使用
 Vue.prototype.$message = Message
