@@ -24,6 +24,13 @@ import {
     Row,
     Col,
     Avatar,
+    Tooltip,
+    MessageBox,
+    Notification,
+    Container,
+    Header,
+    Main,
+    Footer,
 
 } from 'element-ui'
 
@@ -38,5 +45,16 @@ Vue.use(TableColumn)
 Vue.use(Row)
 Vue.use(Col)
 Vue.use(Avatar)
-    // 挂载到 Vue原型对象上   通过 this.$message 的方法来使用
+Vue.use(Tooltip)
+Vue.use(Container)
+Vue.use(Main)
+Vue.use(Header)
+Vue.use(Footer)
+
+// 挂载到 Vue原型对象上   通过 this.$message 的方法来使用
 Vue.prototype.$message = Message
+Vue.prototype.$msgbox = MessageBox;
+Vue.prototype.$alert = MessageBox.alert;
+Vue.prototype.$confirm = MessageBox.confirm;
+Vue.prototype.$prompt = MessageBox.prompt;
+Vue.prototype.$notify = Notification;

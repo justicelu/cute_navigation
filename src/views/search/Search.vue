@@ -95,7 +95,11 @@ export default {
   methods: {
     // 切换搜索引擎接口事件
     click_li_select_spi_event(info) {
-      this.$message.success("正在使用的搜索接口为 :  " + info.name);
+      this.$message.success({
+        duration: 1000,
+        message: "正在使用的搜索接口为 :  " + info.name,
+      });
+      // this.$message.success("正在使用的搜索接口为 :  " + info.name, 1500);
       this.searching_API = info.api;
       this.search_id = info.id;
       this.show_select_api_div = !this.show_select_api_div;
@@ -108,7 +112,10 @@ export default {
     },
     show_select_api() {
       this.show_select_api_div = true;
-      this.$message.warning("正在执行切换搜索引擎操作!");
+      this.$message.warning({
+        duration: 1000,
+        message: "正在执行切换搜索引擎操作!",
+      });
     },
 
     searchKey() {
@@ -138,7 +145,7 @@ export default {
   height: 45px
   background-color: rgb(255, 255, 255)
   border-radius: 8px
-  margin: 16% auto
+  margin: 13% auto
 
 .search_select_box
   display: inline-block

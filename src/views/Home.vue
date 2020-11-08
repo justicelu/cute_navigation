@@ -1,12 +1,23 @@
 <template>
   <div id="home">
-    <Weather></Weather>
-    <!-- <div class="avatar_div">
-      <el-avatar size="50" :src="_getImgUrl('bing')"></el-avatar>
-    </div> -->
-    <Search_></Search_>
+    <!-- 天气栏 -->
     <transition name="transition_show">
-      <NavCard_ v-show="show_card"></NavCard_>
+      <Weather v-show="show_weather_card"></Weather>
+    </transition>
+    <!-- 头像栏 -->
+    <Avatar></Avatar>
+
+    <!-- 搜索栏 -->
+    <Search_></Search_>
+    <!-- 快捷导航栏 -->
+    <transition name="transition_show">
+      <NavCard_ v-show="show_nav_card"></NavCard_>
+    </transition>
+
+    <!-- 设置区 -->
+    <Setting></Setting>
+    <transition name="transition_show">
+      <Sentence v-show="show_sentence"></Sentence>
     </transition>
   </div>
 </template>
@@ -15,16 +26,24 @@
 import Search_ from "@/views/search/Search";
 import NavCard_ from "@/views/nav_card/NavCard";
 import Weather from "@/views/weather/Weather";
+import Avatar from "@/views/avatar/Avatar";
+import Setting from "@/views/setting/Setting";
+import Sentence from "@/views/sentence/Sentence";
 export default {
   components: {
     Search_,
     NavCard_,
     Weather,
+    Avatar,
+    Setting,
+    Sentence,
   },
   data() {
     return {
       // 是否展示快捷导航区
-      show_card: true,
+      show_nav_card: true,
+      show_weather_card: true,
+      show_sentence: true,
       // 屏幕宽度和高度
       screenWidth: "",
       screenHeight: "",
@@ -37,24 +56,30 @@ export default {
       return require("../../public/img/ico_png/" + id + ".png");
       // return require(url);
     },
-    show_nav_card_method() {
-      if (this.screenWidth < 700 || this.screenHeight < 600) {
-        this.show_card = false;
-      } else this.show_card = true;
+    show_card_method() {
+      if (this.screenWidth < 700 || this.screenHeight < 550) {
+        this.show_nav_card = false;
+      } else this.show_nav_card = true;
+      if (this.screenWidth < 700 || this.screenHeight < 300) {
+        this.show_weather_card = false;
+      } else this.show_weather_card = true;
+      if (this.screenWidth < 200 || this.screenHeight < 400) {
+        this.show_sentence = false;
+      } else this.show_sentence = true;
     },
   },
   created() {
-    this.show_nav_card_method();
+    this.show_card_method();
   },
   mounted() {
     this.screenWidth = document.body.clientWidth;
     this.screenHeight = document.body.clientHeight;
-    this.show_nav_card_method();
+    this.show_card_method();
     window.onresize = () => {
       return (() => {
         this.screenWidth = document.body.clientWidth;
         this.screenHeight = document.body.clientHeight;
-        this.show_nav_card_method();
+        this.show_card_method();
       })();
     };
   },
@@ -72,13 +97,7 @@ export default {
   background-position: center;
   overflow: hidden;
   /* position: relative; */
-}
-.avatar_div {
-  margin: 2% 2%;
-  float: right;
-  border-radius: 50%;
-  /* box-shadow: 1px 1px 5px rgba(245, 242, 242, 0.329); */
-  cursor: pointer;
+  position: relative;
 }
 
 /* vue 过渡动画效果 */
@@ -86,7 +105,7 @@ export default {
   opacity: 0;
 }
 
-.transition_show-active {
+.transition_show-enter-active {
   transition: opacity 1s;
 }
 

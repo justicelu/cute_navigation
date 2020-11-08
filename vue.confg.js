@@ -13,6 +13,18 @@ module.exports = {
         .set('#', resolve('public'));
 
         config.resolve.symlinks(true);
-    }
+    },
+    // devServer: {
+    //     proxy: {
+    //         "/api": {
+    //             target: "http://",
+    //             ws: true,
+    //             changeOrigin: true,
+    //             pathRewrite: {
+    //                 "^/api": "/"
+    //             }
+    //         }
+    //     }
+    // }
 
 }

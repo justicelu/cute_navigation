@@ -3,6 +3,7 @@
     padding: 0;
     /* box-sizing: border-box; */
     user-select: none;
+    font-family: "Microsoft Yahei";
 }
 
 html {
@@ -25,4 +26,8 @@ li {
 
 .right {
     float: right;
+}
+
+.pointer_ {
+    cursor: pointer;
 }
