@@ -30,7 +30,7 @@ export default {
   position: absolute;
   bottom: 3%;
   left: 48%;
-
+  color: rgb(255, 255, 255);
   transform: translateX(-50%);
 }
 .sentence_msg {

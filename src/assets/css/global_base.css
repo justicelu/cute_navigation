@@ -31,3 +31,9 @@ li {
 .pointer_ {
     cursor: pointer;
 }
+
+.img_center {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

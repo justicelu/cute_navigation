@@ -38,7 +38,6 @@
           v-model="searchInput"
           @keyup.enter="searchKey"
         />
-        <!-- <span class="sousuo"></span> -->
         <!-- 将原先的静态搜索框优化为现在的可跳转搜索框 -->
         <input
           type="submit"
@@ -88,6 +87,11 @@ export default {
           name: "搜狗搜索",
           url: "#/img/ico_png/sougou.png",
           api: "https://www.sogou.com/web?query=",
+        },
+        {
+          id: "miji",
+          name: "秘迹搜索",
+          api: "https://mijisou.com/?q=",
         },
       ],
     };
@@ -163,9 +167,9 @@ export default {
 
 .select_api_div
   padding: 1px
-  width: 50px
+  width: 200px
   /* height: 60px; */
-  transform: translate(-8px, 38px)
+  transform: translate(-8px, 40px)
   background-color: whitesmoke
   border-radius: 8px
   z-index: 10
@@ -186,6 +190,7 @@ export default {
 
 /* 过度动画效果结束 */
 .li_select_api_div
+  display: inline-block
   width: 40px
   height: 40px
   /* background-color: gold; */
@@ -218,8 +223,10 @@ export default {
   background: rgba(255, 255, 255, 0)
   float: right
   border-radius: 8px
-  width: 45px
-  height: 45px
+  margin-top: 2.5px
+  margin-right: 2.5px
+  width: 40px
+  height: 40px
   -webkit-border-radius: 8px
   -moz-border-radius: 8px
   -ms-border-radius: 8px

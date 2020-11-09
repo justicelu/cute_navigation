@@ -59,6 +59,11 @@ export default {
           api: "https://pintia.cn/problem-sets?tab=0",
         },
         {
+          id: "zhanwang",
+          name: "小展望",
+          api: "http://justicelu.gitee.io/study",
+        },
+        {
           id: "canva",
           name: "Canva",
           api: "https://www.canva.cn/",
@@ -82,6 +87,11 @@ export default {
           id: "wangyiyun",
           name: "网易云",
           api: "https://music.163.com/#/user/home?id=1571471756",
+        },
+        {
+          id: "yunfuwu",
+          name: "控制台",
+          api: "https://www.sanfengyun.com/login/",
         },
       ],
     };
@@ -155,13 +165,13 @@ export default {
 
 <style scoped >
 .nav_card {
-  min-width: 300px;
-  max-width: 50%;
-  min-height: 160px;
   margin: 0 auto;
-  margin-top: 8%;
-  /* background-color: rgba(255, 255, 255, 0); */
+  min-width: 300px;
+  max-width: 60%;
+  min-height: 160px;
 
+  margin-top: 5% !important;
+  /* background-color: rgba(255, 255, 255, 0); */
   border-style: unset;
   background-color: transparent;
   border: unset !important;
@@ -169,17 +179,17 @@ export default {
 }
 .item_col_div {
   padding: 5px;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   cursor: pointer;
 }
 .nav_card_li_div {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   /* background-color: wheat; */
   margin: 5px auto;
   background-color: #fff;
-  border: 10px solid white;
+  border: 12px solid white;
   border-radius: 50%;
 }
 p {
@@ -189,6 +199,6 @@ p {
   color: #fff;
 }
 .el_second_row {
-  margin-top: 6%;
+  margin-top: 5%;
 }
 </style>

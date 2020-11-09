@@ -19,7 +19,8 @@
     </div>
   </div>
 </template>
-
+<script>
+</script>
 <script>
 export default {
   name: "Weather",
@@ -99,27 +100,29 @@ export default {
   },
   mounted() {
     // 时钟效果;
-    function time_ok(x) {
-      return x >= 10 ? x : "0" + x;
-    }
-    function block() {
-      var timeInMs = Date.now();
-      var date = new Date();
-      var dateNow = new Array();
-      dateNow[0] = date.getHours();
-      dateNow[1] = date.getMinutes();
-      dateNow[2] = date.getSeconds();
-      var block = document.querySelector(".time_block");
-      block.innerHTML =
-        time_ok(dateNow[0]) +
-        " : " +
-        time_ok(dateNow[1]) +
-        " : " +
-        time_ok(dateNow[2]);
-    }
-    block(); //先调用一下以免卡时间
-    setInterval(block, 1000); //这里调用的函数不需要括号,直接写函数名字即可
-    //
+    //   function time_ok(x) {
+    //     return x >= 10 ? x : "0" + x;
+    //   }
+    //   function block() {
+    //     var timeInMs = Date.now();
+    //     var date = new Date();
+    //     var dateNow = new Array();
+    //     dateNow[0] = date.getHours();
+    //     dateNow[1] = date.getMinutes();
+    //     dateNow[2] = date.getSeconds();
+    //     var block = document.querySelector(".time_block");
+    //     // 用 Html 写入无法读取 特殊字符,用 Text 写入就可以
+    //     let time_str =
+    //       time_ok(dateNow[0]) +
+    //       " : " +
+    //       time_ok(dateNow[1]) +
+    //       " : " +
+    //       time_ok(dateNow[2]);
+    //     block.innerText = time_str ? time_str : "00 : 00 : 00";
+    //   }
+    //   block(); //先调用一下以免卡时间
+    //   setInterval(block, 1200); //这里调用的函数不需要括号,直接写函数名字即可
+    //   //
   },
 };
 </script>

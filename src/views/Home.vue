@@ -19,6 +19,7 @@
     <transition name="transition_show">
       <Sentence v-show="show_sentence"></Sentence>
     </transition>
+    <Gamenav></Gamenav>
   </div>
 </template>
 
@@ -28,6 +29,7 @@ import NavCard_ from "@/views/nav_card/NavCard";
 import Weather from "@/views/weather/Weather";
 import Avatar from "@/views/avatar/Avatar";
 import Setting from "@/views/setting/Setting";
+import Gamenav from "@/views/setting/Game_nav";
 import Sentence from "@/views/sentence/Sentence";
 export default {
   components: {
@@ -37,6 +39,7 @@ export default {
     Avatar,
     Setting,
     Sentence,
+    Gamenav,
   },
   data() {
     return {
@@ -57,7 +60,7 @@ export default {
       // return require(url);
     },
     show_card_method() {
-      if (this.screenWidth < 700 || this.screenHeight < 550) {
+      if (this.screenWidth < 750 || this.screenHeight < 640) {
         this.show_nav_card = false;
       } else this.show_nav_card = true;
       if (this.screenWidth < 700 || this.screenHeight < 300) {
@@ -91,7 +94,8 @@ export default {
   width: 100%;
   height: 100%;
   /* background-image: url(https://api.sunweihu.com/api/bing1/api.php); */
-  background-image: url("https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BBUpVFY.img");
+  background-image: url("//www.bing.com/th?id=OHR.PiedmontRegion_ZH-CN9956166156_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=HpEdgeAn");
+  /* background-image: url("https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BBUpVFY.img"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
