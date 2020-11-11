@@ -93,8 +93,8 @@ export default {
 #home {
   width: 100%;
   height: 100%;
-  /* background-image: url(https://api.sunweihu.com/api/bing1/api.php); */
-  background-image: url("//www.bing.com/th?id=OHR.PiedmontRegion_ZH-CN9956166156_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=HpEdgeAn");
+  background-image: url(https://api.sunweihu.com/api/bing1/api.php);
+  /* background-image: url("//www.bing.com/th?id=OHR.PiedmontRegion_ZH-CN9956166156_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=HpEdgeAn"); */
   /* background-image: url("https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BBUpVFY.img"); */
   background-repeat: no-repeat;
   background-size: cover;

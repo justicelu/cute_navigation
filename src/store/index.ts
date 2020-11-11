@@ -5,6 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    weather_block_use:true,
   },
   mutations: {
   },

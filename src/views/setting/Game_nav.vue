@@ -27,7 +27,7 @@ export default {
       this.timer = setTimeout(() => {
         //设置延迟执行
         this.$router.push("/show");
-      }, 3000);
+      }, 1300);
     },
     // 获取图片地址
     _getImgUrl(id) {

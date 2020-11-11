@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f61a35d9d5baf6b9fef7",
-    "url": "/css/app.7ac5380b.css"
+    "revision": "a68383a8025696ac80e8",
+    "url": "/css/app.f564e2c1.css"
   },
   {
-    "revision": "4c463c06af553b0733b6",
-    "url": "/css/chunk-vendors.5433566c.css"
+    "revision": "73845ea8d6255014d0c8",
+    "url": "/css/chunk-vendors.cbbb34fa.css"
   },
   {
     "revision": "535877f50039c0cb49a6196a5b7517cd",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/fonts/element-icons.732389de.ttf"
   },
   {
-    "revision": "abb401fefacd0d6d9626679f8745fbc7",
-    "url": "/img/baidu.abb401fe.png"
+    "revision": "d3bedc8cf9ab9c2099ee99aab9427182",
+    "url": "/img/baidu.d3bedc8c.png"
   },
   {
     "revision": "8c38a99a24e900910627e2ab9449749c",
@@ -40,7 +40,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/duoyun.99ad06ef.png"
   },
   {
-    "revision": "abb401fefacd0d6d9626679f8745fbc7",
+    "revision": "d1d6e8dcfe540eed0102638731895ae9",
+    "url": "/img/game.d1d6e8dc.png"
+  },
+  {
+    "revision": "d3bedc8cf9ab9c2099ee99aab9427182",
     "url": "/img/ico_png/baidu.png"
   },
   {
@@ -60,6 +64,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/ico_png/coding.png"
   },
   {
+    "revision": "d1d6e8dcfe540eed0102638731895ae9",
+    "url": "/img/ico_png/game.png"
+  },
+  {
     "revision": "df672d600a612cc70dbab25e51351831",
     "url": "/img/ico_png/iconfont.png"
   },
@@ -72,6 +80,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/ico_png/me.png"
   },
   {
+    "revision": "e028ecc7903d5d3450c3561d9f6da1e2",
+    "url": "/img/ico_png/miji.png"
+  },
+  {
     "revision": "980a1ce3dc208639aadc81ae10e4461d",
     "url": "/img/ico_png/pta.png"
   },
@@ -82,6 +94,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "568cb09c775ae0f60b65f63a52b656fc",
     "url": "/img/ico_png/settiing.png"
+  },
+  {
+    "revision": "45e08e316f6bc8f8734ca63126ce2bd2",
+    "url": "/img/ico_png/show.png"
   },
   {
     "revision": "e0716ff1e52d7b85bb6dd82cb0ac0399",
@@ -100,8 +116,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/ico_png/wangyiyun.png"
   },
   {
+    "revision": "436088d64dbdac38e92abb9712128df3",
+    "url": "/img/ico_png/yunfuwu.png"
+  },
+  {
+    "revision": "6af4a1691e7b7d30f312dc3ae169c871",
+    "url": "/img/ico_png/zhanwang.png"
+  },
+  {
     "revision": "df672d600a612cc70dbab25e51351831",
     "url": "/img/iconfont.df672d60.png"
+  },
+  {
+    "revision": "7865bf1fc0dcdda3bb79d3db1174a511",
+    "url": "/img/mai.7865bf1f.png"
   },
   {
     "revision": "8796b0a00156b8027632235c42745a4e",
@@ -110,6 +138,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0d37aed97e8a7727f02768fb8c049c8e",
     "url": "/img/me.0d37aed9.png"
+  },
+  {
+    "revision": "e028ecc7903d5d3450c3561d9f6da1e2",
+    "url": "/img/miji.e028ecc7.png"
   },
   {
     "revision": "980a1ce3dc208639aadc81ae10e4461d",
@@ -126,6 +158,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "568cb09c775ae0f60b65f63a52b656fc",
     "url": "/img/settiing.568cb09c.png"
+  },
+  {
+    "revision": "45e08e316f6bc8f8734ca63126ce2bd2",
+    "url": "/img/show.45e08e31.png"
   },
   {
     "revision": "e0716ff1e52d7b85bb6dd82cb0ac0399",
@@ -148,28 +184,48 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/weather_ico/duoyun.png"
   },
   {
+    "revision": "7865bf1fc0dcdda3bb79d3db1174a511",
+    "url": "/img/weather_ico/mai.png"
+  },
+  {
     "revision": "364be8ae96a3b17c685667c89858bffe",
     "url": "/img/weather_ico/qing.png"
+  },
+  {
+    "revision": "e7e8255fbe9bef68c2822651fc3ab538",
+    "url": "/img/weather_ico/xiaoyu.png"
   },
   {
     "revision": "cd96c2b2b2276b65a15910d0e8ab2cf0",
     "url": "/img/weather_ico/yin.png"
   },
   {
+    "revision": "e7e8255fbe9bef68c2822651fc3ab538",
+    "url": "/img/xiaoyu.e7e8255f.png"
+  },
+  {
     "revision": "cd96c2b2b2276b65a15910d0e8ab2cf0",
     "url": "/img/yin.cd96c2b2.png"
   },
   {
-    "revision": "61b9035946e42252f810f860864da46b",
+    "revision": "436088d64dbdac38e92abb9712128df3",
+    "url": "/img/yunfuwu.436088d6.png"
+  },
+  {
+    "revision": "6af4a1691e7b7d30f312dc3ae169c871",
+    "url": "/img/zhanwang.6af4a169.png"
+  },
+  {
+    "revision": "b26e835f1051fc8b50e1dc64e9af75d5",
     "url": "/index.html"
   },
   {
-    "revision": "f61a35d9d5baf6b9fef7",
-    "url": "/js/app.807b0eed.js"
+    "revision": "a68383a8025696ac80e8",
+    "url": "/js/app.220d1599.js"
   },
   {
-    "revision": "4c463c06af553b0733b6",
-    "url": "/js/chunk-vendors.8c90d722.js"
+    "revision": "73845ea8d6255014d0c8",
+    "url": "/js/chunk-vendors.78562631.js"
   },
   {
     "revision": "8b50279eab867e720afa1a092b2d383e",

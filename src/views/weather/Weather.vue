@@ -48,6 +48,7 @@ export default {
       let high = res.data.forecast[0].high.match(/\d+(.\d+)?/g)[0];
       let low = res.data.forecast[0].low.match(/\d+(.\d+)?/g)[0];
       // 计算平均温度
+      console.log(res);
       // this.weather_temperature = (parseInt(arr1) + parseInt(arr2)) / 2;
       this.weather_temperature = low + "~" + high;
       // console.log(parseInt(arr1));
@@ -72,6 +73,11 @@ export default {
           return "duoyun";
         case "阴":
           return "yin";
+        case "霾":
+          return "mai";
+        case "阵雨":
+        case "小雨":
+          return "xiaoyu";
       }
     },
     // 获取图片地址
@@ -94,12 +100,15 @@ export default {
     },
   },
   created() {
+    // this.$store.state.weather_block_use = true;
+    // this.$message.info(this.$router.path);
     this.get_this_weather();
     setTimeout(() => (this.show_odk = false), 3000);
     setTimeout(() => (this.show_odk1 = true), 3200);
   },
   mounted() {
-    // 时钟效果;
+    // if (this.$store.state.weather_block_use === true) {
+    //   // 时钟效果;
     //   function time_ok(x) {
     //     return x >= 10 ? x : "0" + x;
     //   }
@@ -121,8 +130,9 @@ export default {
     //     block.innerText = time_str ? time_str : "00 : 00 : 00";
     //   }
     //   block(); //先调用一下以免卡时间
-    //   setInterval(block, 1200); //这里调用的函数不需要括号,直接写函数名字即可
+    //   let time_back = setInterval(block, 1200); //这里调用的函数不需要括号,直接写函数名字即可
     //   //
+    // }
   },
 };
 </script>
@@ -158,7 +168,7 @@ export default {
   text-align: 35px;
   line-height: 35px;
   font-size: 1em;
-  color: rgb(245, 240, 240);
+  color: rgb(255, 255, 255);
 }
 .time_block {
   position: absolute;

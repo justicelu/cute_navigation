@@ -5,6 +5,9 @@ function resolve(dir) {
 }
 
 module.exports = {
+    // baseUrl: './'
+    // publicPatth: "./";
+    // assetsPublicPath: './';
     productionSourceMap: false,
     chainWebpack: (config) => {
         //修改文件引入自定义路径
