@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a68383a8025696ac80e8",
-    "url": "/css/app.f564e2c1.css"
+    "revision": "ce5b4552df120c2119ee",
+    "url": "/css/app.f4d08d96.css"
   },
   {
     "revision": "73845ea8d6255014d0c8",
@@ -44,6 +44,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/game.d1d6e8dc.png"
   },
   {
+    "revision": "288dba4da6acd37d903ae2bafca23169",
+    "url": "/img/home.288dba4d.png"
+  },
+  {
     "revision": "d3bedc8cf9ab9c2099ee99aab9427182",
     "url": "/img/ico_png/baidu.png"
   },
@@ -68,6 +72,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/ico_png/game.png"
   },
   {
+    "revision": "288dba4da6acd37d903ae2bafca23169",
+    "url": "/img/ico_png/home.png"
+  },
+  {
     "revision": "df672d600a612cc70dbab25e51351831",
     "url": "/img/ico_png/iconfont.png"
   },
@@ -86,6 +94,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "980a1ce3dc208639aadc81ae10e4461d",
     "url": "/img/ico_png/pta.png"
+  },
+  {
+    "revision": "2b403e864ee1be70863d47044c3549e1",
+    "url": "/img/ico_png/reload1.png"
+  },
+  {
+    "revision": "945e4851e9a29a45eaaf22475d678487",
+    "url": "/img/ico_png/reload2.png"
+  },
+  {
+    "revision": "8d59f7f69852d918fbce568fcc1fe892",
+    "url": "/img/ico_png/reload3.png"
   },
   {
     "revision": "f274dce7ed321da5a744ec56a2f42f1b",
@@ -152,6 +172,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/qing.364be8ae.png"
   },
   {
+    "revision": "2b403e864ee1be70863d47044c3549e1",
+    "url": "/img/reload1.2b403e86.png"
+  },
+  {
+    "revision": "945e4851e9a29a45eaaf22475d678487",
+    "url": "/img/reload2.945e4851.png"
+  },
+  {
+    "revision": "8d59f7f69852d918fbce568fcc1fe892",
+    "url": "/img/reload3.8d59f7f6.png"
+  },
+  {
     "revision": "f274dce7ed321da5a744ec56a2f42f1b",
     "url": "/img/rukeda.f274dce7.png"
   },
@@ -216,12 +248,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/zhanwang.6af4a169.png"
   },
   {
-    "revision": "b26e835f1051fc8b50e1dc64e9af75d5",
+    "revision": "7fa3a8572b0d082a425e6b7281008434",
     "url": "/index.html"
   },
   {
-    "revision": "a68383a8025696ac80e8",
-    "url": "/js/app.220d1599.js"
+    "revision": "ce5b4552df120c2119ee",
+    "url": "/js/app.586e9a14.js"
   },
   {
     "revision": "73845ea8d6255014d0c8",

@@ -5,7 +5,7 @@
         @click="get_bgIMG()"
         class="setting_btn"
         size="medium"
-        icon="el-icon-star-on"
+        :icon="ico"
         circle
       ></el-button>
     </div>
@@ -18,7 +18,9 @@ export default {
   name: "Setting",
   data() {
     return {
-      last_select_num: 0,
+      time_out: "",
+      ico: "el-icon-star-on",
+      last_select_num: -1,
       str: [
         "https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture",
         "https://api.newview.top/wallpaper/?cid=&freq=0&resolution=__85",
@@ -43,15 +45,39 @@ export default {
   methods: {
     get_bgIMG() {
       let odk = Math.floor(Math.random() * this.str.length);
+
       if (odk !== this.last_select_num) {
-        document.getElementById("home").style.backgroundImage =
-          "url(" + this.str[odk] + ")";
-        this.last_select_num = odk;
+        // 稍微优化了一下壁纸更换效果 有了过渡效果
+        let img = new Image();
+        img.src = this.str[odk];
+        this.ico = "el-icon-more";
+        img.onload = this.change_bgIMG(img, odk);
         // this.$message("当前的壁纸网站是第 :  " + odk + " 个 ");
       } else {
         this.get_bgIMG();
       }
     },
+    change_bgIMG(img, odk) {
+      document.getElementById("home").style.backgroundImage =
+        "url(" + img.src + ")";
+      // this.$message("当前的壁纸网站是第 :  " + odk + " 个 ");
+      // clearTimeout(this.time_out);
+      this.time_out = setTimeout((this.ico = "el-icon-star-on"), 2000);
+      this.ico = "el-icon-star-on";
+      this.last_select_num = odk;
+    },
+    // 实现数组的更换效果,为更换背景功能提供每次都是不同的数字的技术支持
+    // limit_six_no_reapet_methods(array, num) {
+    //   // 这里会产生一个随机数 x
+    //   let x;
+    //   let i,
+    //     flag = true;
+    //   for (i; i < array.length; i++) {
+    //     if (array[i] === num) {
+    //       //
+    //     }
+    //   }
+    // },
     // 获取图片地址
     _getImgUrl(id) {
       // 这里路径必须是拼接出来的，不能写死成：return require(pic_name)

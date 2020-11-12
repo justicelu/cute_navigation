@@ -48,27 +48,76 @@ export default {
       // https://theuselessweb.com/ 访问这个网站,可以随机出来很多好玩的小游戏
       game_List: [
         "https://www.webhek.com/misc-res/species-in-pieces/#",
+        // CSS 濒危动物
         "https://www.webhek.com/misc-res/species-in-pieces/#",
+        // 星云分布图
         "https://29a.ch/sandbox/2011/neonflames/",
+        // 黑黑小虫虫
         "http://www.staggeringbeauty.com/",
+        // 假的升级界面
         "https://fakeupdate.net/",
+        // 毒鸡汤
         "https://8zt.cc/index.html",
-        "http://corndog.io/",
-        "http://eelslap.com/",
+        // 随机鼠标墨水绘画网站
         "https://jacksonpollock.org/",
-        "https://cat-bounce.com/",
-        "http://burymewithmymoney.com/",
+        // hover就会分裂,的考拉图片
         "http://www.koalastothemax.com/",
+        // hover就会有各种花花草草
         "http://drawing.garden/",
+        // 画着玩的绘画网站
         "http://weavesilk.com/",
-        "http://www.blankwindows.com/",
+        // 可以拖动的一堆破碎符号
         "http://buildshruggie.com/",
-        "http://spaceis.cool/",
-        "https://www.ascii-middle-finger.com/",
+        // 初音的点击音乐网站
+        "https://aidn.jp/mikutap/",
+        // 简单的蓝天白云背景
         "https://greatbignothing.com/",
-        "http://wowenwilsonquiz.com/",
-        "http://www.amialright.com/",
-        "http://lacquerlacquer.com/",
+        // 小游戏集合
+        "https://games.infinitynewtab.com/",
+        // Github 网站
+        "https://github.com/",
+        // 暴走漫画
+        "http://baozoumanhua.com/",
+        // b站
+        "https://www.bilibili.com/",
+        // 自由弹钢琴
+        "https://www.autopiano.cn/",
+        // 小游戏
+        "http://wanga.me/",
+        // 中国象棋
+        "https://www.chinesechess.com.cn/",
+        // 选股,盯盘
+        "https://xuangubao.cn/dingpan",
+        // 微信读书
+        "https://weread.qq.com/",
+        // 技术论坛创意论坛网站
+        "https://www.v2ex.com/",
+        // 捏老婆网站
+        "https://picrew.me/",
+        // 小鸡大作战
+        "https://hury.io/",
+        // 山水画生成
+        "http://shan-shui-inf.lingdong.works/",
+        // 随便买
+        "https://maiba.fun/",
+        // 生成自己的油像画
+        "https://pixel-me.tokyo/en/",
+        // 空间站模拟器
+        "https://iss-sim.spacex.com/",
+        // 在线枪战
+        "https://krunker.io/",
+        // ascll 跑图
+        "http://asciicker.com/",
+        // 文字冒险游戏
+        "http://skynetsimulator.com/",
+        // 遥控小汽车游戏
+        "https://bruno-simon.com/",
+        // 经典控制台
+        "https://cmd.to/",
+        // 在线我的世界
+        "https://classic.minecraft.net/",
+        // 掘金
+        "https://juejin.im/",
       ],
     };
   },

@@ -149,7 +149,8 @@ export default {
   height: 45px
   background-color: rgb(255, 255, 255)
   border-radius: 8px
-  margin: 13% auto
+  margin: 0 auto
+  margin-top: 12%
 
 .search_select_box
   display: inline-block

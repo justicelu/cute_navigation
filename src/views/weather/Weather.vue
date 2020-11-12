@@ -26,6 +26,7 @@ export default {
   name: "Weather",
   data() {
     return {
+      time_back: "",
       show_odk: true,
       show_odk1: false,
       // 温馨提示
@@ -51,6 +52,9 @@ export default {
       console.log(res);
       // this.weather_temperature = (parseInt(arr1) + parseInt(arr2)) / 2;
       this.weather_temperature = low + "~" + high;
+      // if (this.weather_temperature == 0) {
+      //   this.weather_temperature = "No_Internet";
+      // }
       // console.log(parseInt(arr1));
       this.tittle = res.data.ganmao;
       // console.log(res.data);
@@ -107,32 +111,34 @@ export default {
     setTimeout(() => (this.show_odk1 = true), 3200);
   },
   mounted() {
-    // if (this.$store.state.weather_block_use === true) {
-    //   // 时钟效果;
-    //   function time_ok(x) {
-    //     return x >= 10 ? x : "0" + x;
-    //   }
-    //   function block() {
-    //     var timeInMs = Date.now();
-    //     var date = new Date();
-    //     var dateNow = new Array();
-    //     dateNow[0] = date.getHours();
-    //     dateNow[1] = date.getMinutes();
-    //     dateNow[2] = date.getSeconds();
-    //     var block = document.querySelector(".time_block");
-    //     // 用 Html 写入无法读取 特殊字符,用 Text 写入就可以
-    //     let time_str =
-    //       time_ok(dateNow[0]) +
-    //       " : " +
-    //       time_ok(dateNow[1]) +
-    //       " : " +
-    //       time_ok(dateNow[2]);
-    //     block.innerText = time_str ? time_str : "00 : 00 : 00";
-    //   }
-    //   block(); //先调用一下以免卡时间
-    //   let time_back = setInterval(block, 1200); //这里调用的函数不需要括号,直接写函数名字即可
-    //   //
-    // }
+    // 时钟效果;
+    function time_ok(x) {
+      return x >= 10 ? x : "0" + x;
+    }
+    function block() {
+      var timeInMs = Date.now();
+      var date = new Date();
+      var dateNow = new Array();
+      dateNow[0] = date.getHours();
+      dateNow[1] = date.getMinutes();
+      dateNow[2] = date.getSeconds();
+      var block = document.querySelector(".time_block");
+      // 用 Html 写入无法读取 特殊字符,用 Text 写入就可以
+      let time_str =
+        time_ok(dateNow[0]) +
+        " : " +
+        time_ok(dateNow[1]) +
+        " : " +
+        time_ok(dateNow[2]);
+      block.innerText = time_str ? time_str : "00 : 00 : 00";
+    }
+    block(); //先调用一下以免卡时间
+    this.time_back = setInterval(block, 1200); //这里调用的函数不需要括号,直接写函数名字即可
+    //
+
+    this.$once("hook:beforeDestroy", () => {
+      clearInterval(this.time_back);
+    });
   },
 };
 </script>
