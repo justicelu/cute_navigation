@@ -98,6 +98,11 @@ export default {
   /* padding: 10px; */
   /* background-color: tomato; */
   border-radius: 50%;
+  transition: ease 0.3s;
+}
+.setting_box:hover {
+  background-color: rgb(221, 242, 243);
+  transition: ease 0.3s;
 }
 .setting_btn {
   /* padding: 10px; */
@@ -110,5 +115,8 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+.setting_btn:hover {
+  background-color: transparent;
 }
 </style>

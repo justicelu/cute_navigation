@@ -27,7 +27,7 @@
       </transition>
       <!-- 展示空间 -->
       <transition name="transition_show">
-        <Gamenav v-show="show_odk_card"></Gamenav>
+        <Gamenav v-show="show_odk_card && show_Showing_card"></Gamenav>
       </transition>
     </div>
   </transition>
@@ -53,6 +53,7 @@ export default {
   },
   data() {
     return {
+      show_Showing_card: true,
       show_odk_card: true,
       show_search_card: true,
       // 是否展示快捷导航区
@@ -72,7 +73,7 @@ export default {
       // return require(url);
     },
     show_card_method() {
-      if (this.screenWidth < 750 || this.screenHeight < 600) {
+      if (this.screenWidth < 650 || this.screenHeight < 500) {
         this.show_nav_card = false;
       } else this.show_nav_card = true;
       if (this.screenWidth < 700 || this.screenHeight < 300) {
@@ -80,7 +81,11 @@ export default {
       } else this.show_weather_card = true;
       if (this.screenWidth < 200 || this.screenHeight < 400) {
         this.show_sentence = false;
-      } else this.show_sentence = true;
+        this.show_Showing_card = false;
+      } else {
+        this.show_sentence = true;
+        this.show_Showing_card = true;
+      }
       if (this.screenWidth < 580 || this.screenHeight < 270) {
         this.show_search_card = false;
       } else this.show_search_card = true;

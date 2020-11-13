@@ -157,11 +157,11 @@ export default {
       // 判断是向上移动还是向下移动
       let result = e.deltaY > 0 ? "down" : "up";
 
-      if (result === "up") {
-        this.$message.info(e.deltaY > 0 ? "down" : "up");
-        this.is_show_card = false;
-        // card.style.animationName = move_right_animation;
-      }
+      // if (result === "up") {
+      // this.$message.info(e.deltaY > 0 ? "down" : "up");
+      // this.is_show_card = false;
+      // card.style.animationName = move_right_animation;
+      // }
       // if (scroll < 0) {
       //   console.log("up");
       // } else {
@@ -218,7 +218,14 @@ export default {
   background-color: #fff;
   border: 12px solid white;
   border-radius: 50%;
+  transition: ease 0.3s;
 }
+/* .nav_card_li_div */
+.item_col_div:hover .nav_card_li_div {
+  transform: scale(1.1);
+  box-shadow: 1px 1px 5px rgb(214, 250, 250);
+}
+
 p {
   text-align: center;
   font-size: 10px;

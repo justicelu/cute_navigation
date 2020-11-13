@@ -5,15 +5,15 @@ function resolve(dir) {
 }
 
 module.exports = {
-    // baseUrl: './'
-    // publicPatth: "./";
-    // assetsPublicPath: './';
+    baseUrl: './'
+    publicPatth: "./";
+    assetsPublicPath: './';
     productionSourceMap: false,
     chainWebpack: (config) => {
         //修改文件引入自定义路径
         config.resolve.alias
             .set('@', resolve('src'));
-        .set('#', resolve('public'));
+        // .set('*', resolve('public'));
 
         config.resolve.symlinks(true);
     },

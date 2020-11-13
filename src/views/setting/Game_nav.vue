@@ -44,7 +44,7 @@ export default {
 
 <style scoped >
 .game_nav_box {
-  padding: 10px;
+  padding: 5px;
   /* width: 45px;
   height: 45px; */
   position: absolute;
@@ -56,12 +56,14 @@ export default {
   /* background-color: antiquewhite; */
   border-radius: 50%;
   cursor: pointer;
+  transition: ease 0.3s;
 }
-/* .game_nav_box :hover {
-   background-color: rgba(255, 255, 255, 0.815); 
-} 
-*/
+.game_nav_box:hover {
+  background-color: rgba(235, 253, 252, 0.815);
+}
+
 .game_nav_box_imgdiv {
+  /* background-color: blue; */
   width: 35px;
   height: 35px;
   background-repeat: no-repeat;

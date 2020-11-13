@@ -56,6 +56,8 @@ export default {
         "http://www.staggeringbeauty.com/",
         // 假的升级界面
         "https://fakeupdate.net/",
+        // 极简壁纸
+        "https://bz.zzzmh.cn/",
         // 毒鸡汤
         "https://8zt.cc/index.html",
         // 随机鼠标墨水绘画网站
@@ -66,18 +68,18 @@ export default {
         "http://drawing.garden/",
         // 画着玩的绘画网站
         "http://weavesilk.com/",
-        // 可以拖动的一堆破碎符号
-        "http://buildshruggie.com/",
+        // 虎牙云游戏
+        "https://yowa.huya.com/",
         // 初音的点击音乐网站
         "https://aidn.jp/mikutap/",
         // 简单的蓝天白云背景
         "https://greatbignothing.com/",
         // 小游戏集合
         "https://games.infinitynewtab.com/",
-        // Github 网站
-        "https://github.com/",
         // 暴走漫画
         "http://baozoumanhua.com/",
+        // 网易云电脑游戏
+        "https://cg.163.com/#/mobile",
         // b站
         "https://www.bilibili.com/",
         // 自由弹钢琴
@@ -90,16 +92,12 @@ export default {
         "https://xuangubao.cn/dingpan",
         // 微信读书
         "https://weread.qq.com/",
-        // 技术论坛创意论坛网站
-        "https://www.v2ex.com/",
         // 捏老婆网站
         "https://picrew.me/",
         // 小鸡大作战
         "https://hury.io/",
         // 山水画生成
         "http://shan-shui-inf.lingdong.works/",
-        // 随便买
-        "https://maiba.fun/",
         // 生成自己的油像画
         "https://pixel-me.tokyo/en/",
         // 空间站模拟器

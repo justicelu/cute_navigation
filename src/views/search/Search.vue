@@ -201,7 +201,7 @@ export default {
   margin-right: 10px
   transition: 0.5
   /* width: 355px; */
-  width: 290px
+  width: 300px
   height: 45px
   border: 0
   border-radius: 8px
