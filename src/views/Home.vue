@@ -79,7 +79,7 @@ export default {
       if (this.screenWidth < 700 || this.screenHeight < 300) {
         this.show_weather_card = false;
       } else this.show_weather_card = true;
-      if (this.screenWidth < 200 || this.screenHeight < 400) {
+      if (this.screenWidth < 200 || this.screenHeight < 600) {
         this.show_sentence = false;
         this.show_Showing_card = false;
       } else {

@@ -192,8 +192,8 @@ export default {
   margin: 0 auto;
   min-width: 300px;
   max-width: 60%;
-  min-height: 160px;
-  margin-top: 11% !important;
+  min-height: 180px;
+  margin-top: 13% !important;
   /* background-color: rgba(255, 255, 255, 0); */
   border-style: unset;
   background-color: transparent;
@@ -203,27 +203,28 @@ export default {
   animation-name: move_left_animation;
   /* 2. 持续时间 */
   animation-duration: 1.5s;
+  overflow: visible;
 }
 .item_col_div {
-  padding: 5px;
-  width: 60px;
-  height: 60px;
+  padding: 0.3em;
+  width: 3.5em;
+  height: 3.5em;
   cursor: pointer;
 }
 .nav_card_li_div {
-  width: 20px;
-  height: 20px;
+  width: 1.55em;
+  height: 1.55em;
   /* background-color: wheat; */
-  margin: 5px auto;
+  margin: 0.3em auto;
   background-color: #fff;
   border: 12px solid white;
   border-radius: 50%;
-  transition: ease 0.3s;
+  transition: ease 0.4s;
 }
 /* .nav_card_li_div */
 .item_col_div:hover .nav_card_li_div {
   transform: scale(1.1);
-  box-shadow: 1px 1px 5px rgb(214, 250, 250);
+  box-shadow: 1px 1px 8px rgb(214, 250, 250);
 }
 
 p {
@@ -233,7 +234,7 @@ p {
   color: #fff;
 }
 .el_second_row {
-  margin-top: 5%;
+  margin-top: 6%;
 }
 @keyframes move_left_animation {
   0% {

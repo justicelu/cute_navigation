@@ -94,11 +94,14 @@ export default {
   computed: {
     little_msg() {
       var hour = new Date().getHours();
-      if (hour > 6 && hour < 11) {
+      // console.log(hour);
+      if (hour > 6 && hour <= 10) {
         return "早安安";
-      } else if (hour > 11 && hour < 15) {
+      } else if (hour > 10 && hour <= 12) {
+        return "上午好";
+      } else if (hour > 12 && hour <= 15) {
         return "午好";
-      } else if (hour > 15 && hour < 18) {
+      } else if (hour > 15 && hour <= 18) {
         return "下午好";
       } else return "晚好";
     },

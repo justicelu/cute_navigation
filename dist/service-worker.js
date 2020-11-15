@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.afe561e606d0243d311064a9632d46db.js"
+  "/precache-manifest.7ce035b7a276b558ce1488625dddfab3.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "cute_navigation"});
