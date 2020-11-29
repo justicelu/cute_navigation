@@ -40,7 +40,8 @@ http-server -p 8888 ./dist
 -> 然后固定到任务栏
 ------------------
 -> 通过下载
--> New Tab Redirect
+-> Custom New Tab URL 扩展
+[下载链接](https://microsoftedge.microsoft.com/addons/detail/custom-new-tab-url/oeibmbobgpgnbnlbaffdgebpeepfbnhi)
 -> 进行新建标签的重定向实现代替原来标签页
 (当然还有更多的浏览器插件可以直接达到预想的效果,
 但是这是自己动手写出来的小马甲,
