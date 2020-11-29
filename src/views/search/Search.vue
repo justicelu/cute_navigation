@@ -133,6 +133,8 @@ export default {
         window.open(this.searching_API + this.searchInput, "_blank");
         // 打开后我们就清空搜索内容吧
         this.searchInput = "";
+      } else {
+        this.searchInput = "";
       }
     },
     // },

@@ -90,9 +90,9 @@ export default {
           api: "https://music.163.com/#/user/home?id=1571471756",
         },
         {
-          id: "yunfuwu",
-          name: "控制台",
-          api: "https://www.sanfengyun.com/login/",
+          id: "cainiao",
+          name: "菜鸟教程",
+          api: "https://www.runoob.com/",
         },
       ],
     };
@@ -207,8 +207,8 @@ export default {
 }
 .item_col_div {
   padding: 0.3em;
-  width: 3.5em;
-  height: 3.5em;
+  width: 4.5em;
+  height: 4.5em;
   cursor: pointer;
 }
 .nav_card_li_div {
@@ -217,7 +217,7 @@ export default {
   /* background-color: wheat; */
   margin: 0.3em auto;
   background-color: #fff;
-  border: 12px solid white;
+  border: 10px solid white;
   border-radius: 50%;
   transition: ease 0.4s;
 }
