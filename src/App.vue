@@ -5,7 +5,13 @@
     </transition>
   </div>
 </template>
-
+<script>
+export default {
+  created() {
+    console.log(this.$store.state.test);
+  },
+};
+</script>
 <style lang="scss">
 #app {
   width: 100%;
