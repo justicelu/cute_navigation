@@ -230,10 +230,6 @@ export default {
   margin-right: 2.5px
   width: 40px
   height: 40px
-  -webkit-border-radius: 8px
-  -moz-border-radius: 8px
-  -ms-border-radius: 8px
-  -o-border-radius: 8px
   // background-image: url(#/img/ico_png/sousuo.png)
   background-size: cover
   background-position: center
