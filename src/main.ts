@@ -1,22 +1,23 @@
-import Vue from 'vue'
-import App from './App.vue'
-import './registerServiceWorker'
-import router from './router'
-import store from './store'
+import Vue from "vue";
+import App from "./App.vue";
+import "./registerServiceWorker";
+import router from "./router";
+import store from "./store";
 
 // 全局导入按需注册的element组件
-import '../plugins/element'
+import "../plugins/element";
 
-//  npm i axios -S 安装 axios 
-//  导入  axios 
-import axios from 'axios'
+//  npm i axios -S 安装 axios
+//  导入  axios
+import axios from "axios";
 // 注册挂载  当然这里也可以是你想要命名的其他单词
-Vue.prototype.$http=axios
- 
-// 引入全局样式
-require('./assets/css/global_base.css');
+Vue.prototype.$http = axios;
 
-Vue.config.productionTip = false
+// 引入全局样式
+require("./assets/css/global_base.css");
+require("./assets/css/iconfont.css");
+
+Vue.config.productionTip = false;
 
 // 全局时间过滤器
 // Vue.filter('dateFormat', function(originVal) {
@@ -33,9 +34,8 @@ Vue.config.productionTip = false
 //     return `${y}-${m}-${d} ${hh}:${mm}:${ss}`
 // })
 
-
 new Vue({
-  router,
-  store,
-  render: h => h(App)
-}).$mount('#app')
+    router,
+    store,
+    render: (h) => h(App),
+}).$mount("#app");

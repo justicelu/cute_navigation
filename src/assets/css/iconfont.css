@@ -1,0 +1,25 @@
+@font-face {font-family: "iconfont";
+  src: url('//at.alicdn.com/t/font_2225007_wfv0s9hoxvq.eot?t=1606704823443'); /* IE9 */
+  src: url('//at.alicdn.com/t/font_2225007_wfv0s9hoxvq.eot?t=1606704823443#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAO0AAsAAAAAB+AAAANnAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqDUIMAATYCJAMICwYABCAFhG0HNBvABhHVm/XIvjjI5F7sBLlmQ6p0inHAiKc9v9N2NO73ePh3v/K+JIvodhWTZMcKUGJrxFQCqakSPb7GAHk24g/p5eVRGxOAidRkJwUdAOG7OGdva1SEGsnZk0dfSHmUZfA/7p02luB8Vttx7c2fugDjQAp0D2yDBNIGCcgbxq68iO0EWg0TAu3qGFmBZoXRLxBPvTycQHPKoNSUh2ahsWRqEe80aE7P0zLgrf/9+A+WAo+kITOGHt9qu4LNX+BXzrWq5spFEY5nA5tFxgygEDeljjM5TMxAa1UUpT6/URHSWOGq8gWqqnGlf7wgGhml7WACJhO/2AyCX1l01twJFFpTB3wY4QbII85k4cTpn7kXxEt3QKp9ouvRa9gmaH/xhWdRogyG8rOvjP2GzYjTIH8hdSldQQMNTRNPQQs1+8yOcOcOU4V5I9tyy1YDMkOwyiZsiyC2zdyNdAUlVPPbVjXilTvyo4TD68NrosWM9RxVCkU8RTTW9JXbUg1DPGMsZVDdfPsaL0uVaDlvM6iya6EroS/lbgyXamcsorFpoL7Q0NI3JInyg29I9vRpDon+HexX5SGUkAxvThdlSBIQgptfN3TKyZhBmgnFzriYt9itJeBcWktBrr5/eW27fA2cWfgmdT9Q+Uw5uTmZkUuYHrOuPjE1/njerZkbnkaE/p+cRuivTE+VUjZ5tvrFxaLwIf7vj0F7aVI53bsQRMn+Ppme75nf6jauEZPXSXo3F0kH6UpJ66kSSFJ6k+Px0jndgE1Q5Un09o/7jffdeWMOpEpfzW0F/PwXPez7qgLauWi+J2fwm4Qta4oqNoypyMLSTFIH+Z5lraaRX1MJvY77ugaA2BaauRBC0mQIsmYj6IKfgQZtVqBRsw1oNU13dps+wbIoLZiSCCB064ak00fIuq2gC/4IGgx6gkbdgYZWJ0G5ZJux4KK8EipGC/oP0Uyjs8wsg/IX+q0oSop98g9pjWFoqyabfuKINMaIdfcdswNH0wAPsBuWMsFMU0LDVWCe+7p2ZVeqzDQIKa6EitGC/kM00+jcxixzn3+h34qiGkSF/4e0xvahrZoW6KdibIW4ln3W3XfMDhxNAzyADYuZmGAu75TQcBV6xOa+RvVcW0U1v2p4uk3QKgxtupjjMnmo0f/jfxtbIQAA') format('woff2'),
+  url('//at.alicdn.com/t/font_2225007_wfv0s9hoxvq.woff?t=1606704823443') format('woff'),
+  url('//at.alicdn.com/t/font_2225007_wfv0s9hoxvq.ttf?t=1606704823443') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('//at.alicdn.com/t/font_2225007_wfv0s9hoxvq.svg?t=1606704823443#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-wangyiyun1:before {
+  content: "\e600";
+}
+
+.icon-wangyiyun:before {
+  content: "\e603";
+}
+
