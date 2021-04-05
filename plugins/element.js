@@ -31,7 +31,11 @@ import {
     Header,
     Main,
     Footer,
-
+    Slider,
+    Menu,
+    Submenu,
+    MenuItem,
+    MenuItemGroup
 } from 'element-ui'
 
 // 注册为全局可用的组件
@@ -50,6 +54,11 @@ Vue.use(Container)
 Vue.use(Main)
 Vue.use(Header)
 Vue.use(Footer)
+Vue.use(Slider)
+Vue.use(Submenu)
+Vue.use(Menu)
+Vue.use(MenuItem)
+Vue.use(MenuItemGroup)
 
 // 挂载到 Vue原型对象上   通过 this.$message 的方法来使用
 Vue.prototype.$message = Message

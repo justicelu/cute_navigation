@@ -1,14 +1,17 @@
 <template>
-  <div name="index">
-    <!-- <div id="leftBody">  </div>
-<div id="rightBody"></div>
-<div id="foot"></div> -->
+  <div name="index" id="index">
+    <LeftSide></LeftSide>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
+import LeftSide from "@/views/music/pages/components/leftSide/LeftSide.vue";
 export default {
   name: "index",
+  components: {
+    LeftSide,
+  },
   data() {
     return {};
   },
@@ -20,28 +23,9 @@ export default {
 </script>
 
 <style scoped >
-#leftBody {
-  position: absolute;
-  top: 10vh;
-  left: 0;
-  height: 75vh;
-  width: 20vw;
-  background-color: cadetblue;
-}
-#rightBody {
-  position: absolute;
-  top: 10vh;
-  left: 20vw;
-  height: 75vh;
-  width: 80vw;
-  background-color: rgb(163, 191, 192);
-}
-#foot {
-  position: absolute;
-  top: 85vh;
-  left: 0;
-  width: 100vw;
-  height: 15vh;
-  background-color: chocolate;
+#index {
+  width: 100%;
+  /* height: 70%; */
+  background-color: rgb(119, 129, 128);
 }
 </style>

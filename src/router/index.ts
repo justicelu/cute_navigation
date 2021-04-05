@@ -13,7 +13,7 @@ Vue.use(VueRouter);
 
 const routes: Array<RouteConfig> = [
     // 重定向 将路径 '/' 定向为 '/login'
-    { path: "/", redirect: "/music" },
+    { path: "/", redirect: "/home" },
     {
         path: "/home",
         component: Home,

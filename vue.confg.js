@@ -6,7 +6,7 @@ function resolve(dir) {
 
 module.exports = {
     baseUrl: './'
-    publicPatth: "./";
+    publicPatth: "/cute_navigation/";
     assetsPublicPath: './';
     productionSourceMap: false,
     chainWebpack: (config) => {

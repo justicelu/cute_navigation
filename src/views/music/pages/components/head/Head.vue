@@ -78,7 +78,9 @@ export default {
   font-size: 22px;
 }
 .icon_title_item2 {
+  font-weight: bold;
   transform: translateY(-2px);
+  font-family: "Courier New", Courier, monospace;
 }
 #function {
   float: left;
@@ -150,7 +152,7 @@ export default {
 }
 .my_name {
   color: whitesmoke;
-  font-size: 13px;
+  font-size: 12px;
 }
 .pointer {
   cursor: pointer;
