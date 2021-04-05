@@ -13,9 +13,9 @@ Vue.use(VueRouter);
 
 const routes: Array<RouteConfig> = [
     // 重定向 将路径 '/' 定向为 '/login'
-    { path: "/", redirect: "/home" },
+    // { path: "/", redirect: "/home" },
     {
-        path: "/home",
+        path: "/",
         component: Home,
         meta: {
             title: "汝科大_发现更多可能",
