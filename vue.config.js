@@ -5,10 +5,10 @@ function resolve(dir) {
 }
 
 module.exports = {
-    baseUrl: './'
-    publicPatth: "/cute_navigation/";
-    assetsPublicPath: './';
-    productionSourceMap: false,
+    // baseUrl: './'
+    publicPath: "/cute_navigation/",
+    // assetsPublicPath: './';
+    // productionSourceMap: false,
     chainWebpack: (config) => {
         //修改文件引入自定义路径
         config.resolve.alias
