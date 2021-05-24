@@ -78,4 +78,5 @@ http-server -p 8888 ./dist
     -> 学习部,实现vue_demo的云端部署
 [4] 学习electron
     -> 用于将demo改造为桌面端应用
+[5] 部署
 ```
